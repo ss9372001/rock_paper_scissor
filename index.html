@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="index.js"></script>
+    <title>Rock paper and scissors</title>
+</head>
+    <body>
+        <div class="head">
+            <h1>Let's play rock, paper, and scissors!</h1>
+        </div>
+
+        <div id="main_content">
+
+            <h5 id="intervals">The candidate who scores 5 poins first, wins!</h5>
+
+            <div class="container" id="btn_container">
+
+                <div id="rock" class="btn">
+                    <div class="divs">
+                        <img src="images/download.png">
+                    </div>
+                </div>
+
+                <div id="paper" class="btn">
+                    <div class="divs">
+                        <img src="images/paperr.png">
+                    </div>
+                </div>
+
+                <div id="scissor" class="btn">
+                    <div class="divs">
+                        <img src="images/scissors.png">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="scorecard">
+
+                <div class="human_score">
+                    <div class="count">
+                        <h5>Human</h5>
+                        <h6 class="counter" id="human__scorecard">0</h6>
+                    </div>
+                </div>
+
+                <div class="computer_score">
+                    <div class="count">
+                        <h5>Computer</h5>
+                        <h6 class="counter" id="computer__scorecard">0</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div id="disappear">
+            <h4 class="end_head">You lost!! Try Again?</h4>
+            <div class="retry_btn" id="retry">Retry</div>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+
+</html>

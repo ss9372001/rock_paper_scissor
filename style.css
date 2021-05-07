@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+:root {
+    --ff-all : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --text-color: white;
+    --head_text-color: rgb(0,173,181);
+    --head_bg-color: rgb(34,40,49);
+    --bg-color: rgb(57,62,70);
+    --fs-h1: 3rem;
+    --fs-h4: 1.8rem;
+    --fs-h5: 1.6rem;
+    --fs-h6: 1.4rem;
+    --fs-p: 1rem;
+}
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+h1 {
+    font-size: var(--fs-h1);
+    color: var(--head_text-color);
+    font-family: var(--ff-all);
+    text-align: center;
+}
+.head {
+    background-color: var(--head_bg-color);
+    padding: 3rem;
+    width: 100vw;
+    border-bottom: 1.5px solid var(--head_text-color);
+}
+h5 {
+    font-size: var(--fs-h5);
+    color: var(--text-color);
+    font-family: var(--ff-all);
+    text-align: center;
+    margin: 2rem auto;
+}
+h6 {
+    font-size: var(--fs-h6);
+    color: var(--text-color);
+    font-family: var(--ff-all);
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: center;
+}
+.divs {
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: 5px solid black;
+    box-shadow: 0 5px 5px 5px rgba(255, 255, 255, 0.1);
+}
+#rock, #paper, #scissor {
+    width: 100%;
+    height: auto;
+}
+#rock:hover, #paper:hover, #scissor:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+img {
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+.scorecard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    left: 200px;
+    right: 200px;
+    margin: 40px auto;
+}
+.retry_btn {
+    background-color: black;
+    color: var(--text-color);
+    font-size: var(--fs-h6);
+    font-family: var(--ff-all);
+    padding: 20px 50px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 4rem auto;
+    border-radius: 12px;
+}
+.retry_btn:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 5px 5px rgba(255, 255, 255, 0.1);
+}
+h4 {
+    font-size: var(--fs-h4);
+    color: var(--text-color);
+    text-align: center;
+    transition: ease-in 0.3s;
+}
+.end_head {
+    margin: 4rem auto;
+}
+#disappear {
+    display: none;
+}
